@@ -75,11 +75,10 @@ location / {
 }
 ```
 ### 三、访问测试
-确定服务启动后，浏览器输入 http://localhost/ 即可，内容如下：
-Helloworld
-Welcome to the simplephp framework！
+确定服务启动后，浏览器输入 http://localhost/ 即可。
 
+### 四、开发说明
 
-
+框架在模型层引入了国内较成熟的Think-ORM，具体用法可参考其相关文档说明：https://github.com/top-think/think-orm
 
 SimplePHP遵循Apache2开源协议发布。Apache Licence是著名的非盈利开源组织Apache采用的协议。该协议和BSD类似，鼓励代码共享和尊重原作者的著作权，同样允许代码修改，再作为开源或商业软件发布。
