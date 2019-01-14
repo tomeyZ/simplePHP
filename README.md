@@ -31,12 +31,12 @@ simplePHP           框架根目录
 
 ### 一、安装
 
-**方式一** Composer方式安装（推荐）
+**方式一：** Composer方式安装（推荐）
 ```
 composer create-project tomeyz/simplephp
 ```
 
-**方式二** GitHub方式安装
+**方式二：** GitHub方式安装
 ```
 git clone https://github.com/tomeyZ/simplePHP.git
 ```
