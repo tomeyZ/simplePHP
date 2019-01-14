@@ -1,7 +1,24 @@
 {
-    "require": {
-        "topthink/think-orm": "^1.2",
-        "twig/twig": "^2.0",
-        "monolog/monolog": "^1.24"
+	"name": "tomeyz/simplephp",
+	"description": "Free and simple lightweight php framework",
+	"type": "project",
+	"keywords": [
+		"php",
+		"simplephp",
+		"mvc",
+		"framework"
+	],
+	"license": "MIT",
+	"authors": [
+	{
+		"name": "tomeyz",
+		"email": "zl_tomey@yeah.net"
+	}
+	],
+	"require": {
+		"php": ">=5.6.0",
+		"topthink/think-orm": "^1.2",
+		"twig/twig": "^2.0",
+		"monolog/monolog": "^1.24"
     }
 }
