@@ -76,8 +76,7 @@ location / {
 ```
 ### 三、访问测试
 确定服务启动后，浏览器输入 http://localhost/ 即可，内容如下：
-
-Helloworld\n
+Helloworld
 Welcome to the simplephp framework！
 
 
