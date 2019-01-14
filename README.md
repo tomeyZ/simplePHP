@@ -44,7 +44,7 @@ git clone https://github.com/tomeyZ/simplePHP.git
 > Tip：通过命令将会把simplePHP框架源代码下载到本地。
 
 ### 二、Apache或Nginx配置单一入口请求方式
-单一入口就是指应用程序的所有HTTP请求都是通过index.php接收并转发到功能代码中。
+> 单一入口就是指应用程序的所有HTTP请求都是通过index.php接收并转发到功能代码中。
 
 
 
