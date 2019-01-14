@@ -27,7 +27,9 @@ simplePHP           框架根目录
 
 ## 如何使用
 
-### Composer方式安装（推荐）
+### 一、安装说明
+
+***Composer方式安装（推荐）***
 ```
 composer create-project tomeyz/simplephp
 ```
