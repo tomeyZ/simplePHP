@@ -46,8 +46,39 @@ git clone https://github.com/tomeyZ/simplePHP.git
 ### 二、Apache或Nginx配置单一入口请求方式
 > 单一入口就是指应用程序的所有HTTP请求都是通过index.php接收并转发到功能代码中。
 
+**Apache服务器配置**
+httpd.conf文件中，把LoadModule rewrite_module modules/mod_rewrite.so前面的“#”去掉。
+```
+<Directory />
+  Options Indexes FollowSymLinks MultiViews
+	AllowOverride None
+	<IfModule mod_rewrite.c>
+    # 开启Rewrite功能
+		RewriteEngine on
+		RewriteBase /
+    
+		# 隐藏index.php入口文件
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteRule  ^/?(.*)$ /index.php?%{QUERY_STRING} [L,NC]
+	</IfModule>
+	DirectoryIndex index.php index.html index.htm
+</Directory>
+```
 
+**Nginx服务器配置**
+```
+location / {
+	if (!-e $request_filename){
+    	rewrite ^(.*)$ /index.php?s=$1 last; break;
+    }
+}
+```
+### 三、访问测试
+确定服务启动后，浏览器输入 http://localhost/ 即可，内容如下：
 
+Helloworld
+Welcome to the simplephp framework！
 
 
 SimplePHP遵循Apache2开源协议发布。Apache Licence是著名的非盈利开源组织Apache采用的协议。该协议和BSD类似，鼓励代码共享和尊重原作者的著作权，同样允许代码修改，再作为开源或商业软件发布。
