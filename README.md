@@ -1,6 +1,6 @@
 # SimplePHP
 
-SimplePHP是一款免费开源、简单易懂的轻量级PHP开发框架，框架可用于任何PHP项目的开发，另外的目的是为了一些有独自编写PHP框架想法的同学提供一些代码上的参考，后期我将会连载开发自己的PHP MVC框架系列教程。
+SimplePHP是一款免费开源、简单易懂的轻量级PHP开发框架，适用于大部分PHP MVC项目应用场景，另外的目的是为了一些有独自编写PHP框架想法的同学能够在代码上提供一些参考。
 
 开发环境及依赖包说明：
 * PHP 5.6.0+
@@ -78,6 +78,6 @@ location / {
 
 ### 四、开发说明
 
-框架在模型层引入了国内较成熟的Think-ORM，具体用法可参考其相关文档说明：https://github.com/top-think/think-orm
+框架在模型层引入了国内的Think-ORM，具体用法可参考其相关文档说明：https://github.com/top-think/think-orm
 
 SimplePHP遵循Apache2开源协议发布。Apache Licence是著名的非盈利开源组织Apache采用的协议。该协议和BSD类似，鼓励代码共享和尊重原作者的著作权，同样允许代码修改，再作为开源或商业软件发布。
